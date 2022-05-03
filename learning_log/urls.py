@@ -18,7 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path(
-        "", include("MainApp.urls")
-    ),  # saying, from the homepge, include all urls from this app
+    path("", include("MainApp.urls")),
+    path("users/", include("users.urls")),
+    # saying, from the homepge, include all urls from this app
 ]
